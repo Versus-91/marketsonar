@@ -1,0 +1,6 @@
+@MarketSonar_HostAddress = http://localhost:5067
+
+GET {{MarketSonar_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
