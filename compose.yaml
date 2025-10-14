@@ -1,0 +1,7 @@
+﻿services:
+  marketsonar:
+    image: marketsonar
+    build:
+      context: .
+      dockerfile: Dockerfile
+
