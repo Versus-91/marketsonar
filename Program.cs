@@ -18,7 +18,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/", () => Results.Ok("Success") );
+app.MapGet("/", () => Results.Ok("Azar Khare Gave Mane") );
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
