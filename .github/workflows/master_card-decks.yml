@@ -31,7 +31,9 @@ jobs:
         working-directory: frontend/market-sonar
         
       - name: Copy Dist to WWWROOT
-        run: cp -r frontend/market-sonar/dist/* ./wwwroot
+        run: |
+          mkdir -p wwwroot
+          cp -r frontend/market-sonar/dist/* ./wwwroot
         
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
