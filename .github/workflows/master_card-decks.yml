@@ -17,7 +17,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
+      - name: Build Nuxt App
+        uses: actions/setup-node@v4
+        with: 
+          node-version: "20.x"
+          cache: 'npm'
+        -name: Install dependencies
+        run: npm install
+        working-directory: frontend/market-sonar
+        
+        - name: Build Nuxt application
+        run: npm run build
+        working-directory: frontend/market-sonar
+        
+      - name: Copy Dist to WWWROOT
+      - run: cp -r frontend/market-sonar/dist/* ./wwwroot
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
