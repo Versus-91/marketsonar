@@ -22,6 +22,7 @@ jobs:
         with: 
           node-version: "20.x"
           cache: 'npm'
+          cache-dependency-path: 'frontend/market-sonar/package-lock.json'
       - name: Install dependencies
         run: npm install
         working-directory: frontend/market-sonar
