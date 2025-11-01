@@ -1,6 +1,8 @@
 using MarketSonar.Data;
 using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
+using Azure.Storage.Blobs;
+using MarketSonar.extensions;
 using Microsoft.Extensions.Azure;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,8 @@ builder.Services.AddAzureClients(clientBuilder => {
     clientBuilder.UseCredential(new  DefaultAzureCredential());
 });
 builder.Services.AddMvc(options =>options.EnableEndpointRouting = false);
+builder.Services.AddBlobStorage();
+builder.Logging.ClearProviders().AddConsole().AddDebug();
 var app = builder.Build();
 
 app.UseStaticFiles();

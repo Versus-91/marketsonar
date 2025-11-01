@@ -1,6 +1,5 @@
 ﻿using Azure.Security.KeyVault.Secrets;
 using Azure.Storage.Blobs;
-using Azure.Storage.Blobs;
 
 namespace MarketSonar.extensions;
 
