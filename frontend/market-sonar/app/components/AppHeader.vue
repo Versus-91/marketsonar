@@ -26,7 +26,7 @@ import {BNavbar, BNavbarDropdown, BNavbarItem} from "buefy";
               <a class="button is-primary">
                 <strong>Sign up</strong>
               </a>
-              <a class="button is-light"> Log in </a>
+              <a class="button is-light" href="/login"> Log in </a>
             </div>
           </b-navbar-item>
         </template>
