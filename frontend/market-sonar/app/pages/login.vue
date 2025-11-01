@@ -21,7 +21,7 @@ const password = ref('');
           <b-field  label="Password">
             <b-input v-model="password" type="password"></b-input>
           </b-field>
-          <button class="button is-primary mr-2">Login</button>
+          <button class="button mr-2">Login</button>
           <a class="button is-link" href="/">Back</a>
           <br>
           {{username}}
