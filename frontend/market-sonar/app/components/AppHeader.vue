@@ -16,7 +16,7 @@ import {BNavbar, BNavbarDropdown, BNavbarItem} from "buefy";
           <b-navbar-item href="#"> Documentation </b-navbar-item>
           <b-navbar-dropdown label="Info">
             <b-navbar-item href="/about"> About </b-navbar-item>
-            <b-navbar-item href="#"> Contact </b-navbar-item>
+            <b-navbar-item href="/contact"> Contact </b-navbar-item>
           </b-navbar-dropdown>
         </template>
 
