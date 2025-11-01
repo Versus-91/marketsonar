@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <AppAlert>
-      This is an auto-imported component.
-    </AppAlert>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+<script setup lang="ts">
+</script>
+<style>
+
+</style>
